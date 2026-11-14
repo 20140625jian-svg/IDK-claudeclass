@@ -11,6 +11,15 @@
     <p class="eyebrow">IDK · Claude Class</p>
     <h1>Claude Code로 첫 웹페이지 올리기</h1>
     <p class="lead">GitHub 연결부터 내 컴퓨터로 가져오기까지, 오늘 수업의 다섯 단계입니다.</p>
+    <div class="flow" aria-label="Claude Code에서 GitHub를 거쳐 내 Mac과 웹으로 가는 흐름">
+      <figure><span class="badge claude"><img src="images/claude.svg" alt=""></span><figcaption>Claude Code</figcaption></figure>
+      <span class="arrow" aria-hidden="true">→</span>
+      <figure><span class="badge github"><img src="images/github.svg" alt=""></span><figcaption>GitHub</figcaption></figure>
+      <span class="arrow" aria-hidden="true">→</span>
+      <figure><span class="badge apple"><img src="images/apple.svg" alt=""></span><figcaption>내 Mac</figcaption></figure>
+      <span class="arrow" aria-hidden="true">→</span>
+      <figure><span class="badge html5"><img src="images/html5.svg" alt=""></span><figcaption>웹페이지</figcaption></figure>
+    </div>
     <nav class="toc" aria-label="목차">
       <a href="#claude-code">1. Claude Code</a>
       <a href="#github-connect">2. GitHub 연결하기</a>
@@ -22,7 +31,7 @@
 
   <main>
     <section id="claude-code" class="lesson">
-      <p class="num">01</p>
+      <div class="lesson-head"><span class="badges"><span class="badge claude"><img src="images/claude.svg" alt=""></span></span><p class="num">01</p></div>
       <h2>Claude Code</h2>
       <p>Claude Code는 말로 부탁하면 코드를 읽고, 만들고, 실행까지 해 주는 AI 코딩 도우미입니다.
          <a href="https://claude.ai/code">claude.ai/code</a>에서 시작하면 클라우드 컴퓨터에서 작업합니다.</p>
@@ -34,7 +43,7 @@
     </section>
 
     <section id="github-connect" class="lesson">
-      <p class="num">02</p>
+      <div class="lesson-head"><span class="badges"><span class="badge github"><img src="images/github.svg" alt=""></span></span><p class="num">02</p></div>
       <h2>GitHub 연결하기</h2>
       <p>내 Mac에 GitHub CLI(<code>gh</code>)를 설치하고 로그인합니다.</p>
       <ol class="steps">
@@ -67,7 +76,7 @@ git config --global user.email "GitHub 이메일"</code></pre>
     </section>
 
     <section id="create-repo" class="lesson">
-      <p class="num">03</p>
+      <div class="lesson-head"><span class="badges"><span class="badge git"><img src="images/git.svg" alt=""></span></span><p class="num">03</p></div>
       <h2>GitHub에 레포 만들기</h2>
       <p>레포(저장소)는 프로젝트 파일과 변경 기록을 담는 폴더입니다.</p>
       <ol class="steps">
@@ -87,7 +96,7 @@ git config --global user.email "GitHub 이메일"</code></pre>
     </section>
 
     <section id="local" class="lesson">
-      <p class="num">04</p>
+      <div class="lesson-head"><span class="badges"><span class="badge apple"><img src="images/apple.svg" alt=""></span></span><p class="num">04</p></div>
       <h2>로컬에 연결하기</h2>
       <p>GitHub에 있는 레포를 내 Mac 바탕화면으로 복사(클론)합니다.</p>
       <ol class="steps">
@@ -104,7 +113,7 @@ git pull</code></pre>
     </section>
 
     <section id="webpage" class="lesson">
-      <p class="num">05</p>
+      <div class="lesson-head"><span class="badges"><span class="badge html5"><img src="images/html5.svg" alt=""></span><span class="badge css"><img src="images/css.svg" alt=""></span></span><p class="num">05</p></div>
       <h2>간단한 웹페이지 만들기</h2>
       <p>Claude Code에게 부탁하면 <code>index.html</code>(내용)과 <code>style.css</code>(디자인)를 만들어 줍니다.</p>
       <ol class="steps">
@@ -133,6 +142,6 @@ open index.html</code></pre>
     </section>
   </main>
 
-  <footer>IDK-claudeclass</footer>
+  <footer>IDK-claudeclass · 로고 아이콘: <a href="https://simpleicons.org">Simple Icons</a> (CC0). 각 로고의 상표권은 해당 회사에 있습니다.</footer>
 </body>
 </html>
