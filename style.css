@@ -89,32 +89,44 @@ code {
 }
 .card p { margin: 8px 0 0; color: var(--muted); font-size: 0.9rem; }
 
-.counter {
+a { color: var(--accent); }
+
+.toc { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+.toc a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 999px;
+  padding: 6px 14px;
+}
+.toc a:hover { border-color: var(--accent); }
+
+.lesson {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 24px;
-  text-align: center;
+  border-radius: 14px;
+  padding: 28px 24px;
+  scroll-margin-top: 16px;
 }
-.counter p { color: var(--muted); margin-top: 0; }
+.lesson h2 { margin-top: 0; }
+.num { color: var(--accent); font-weight: 700; margin: 0 0 4px; letter-spacing: 0.05em; }
+.lesson > p { color: var(--muted); }
 
-button {
-  font: inherit;
-  font-weight: 600;
-  background: var(--accent);
-  color: #fff;
-  border: 0;
-  border-radius: 999px;
-  padding: 12px 24px;
-  cursor: pointer;
+.points { padding-left: 20px; margin: 0; }
+.points li { margin-bottom: 6px; }
+
+.steps { margin-top: 20px; }
+.steps p { margin: 4px 0 0; }
+
+pre {
+  background: #1f1d1a;
+  color: #f0ece4;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin: 8px 0 0;
+  overflow-x: auto;
 }
-button:hover { filter: brightness(1.08); }
-button span {
-  display: inline-block;
-  min-width: 1.6em;
-  margin-left: 6px;
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 999px;
-}
+pre code { background: none; padding: 0; color: inherit; font-size: 0.85rem; }
 
 footer { color: var(--muted); font-size: 0.85rem; padding-bottom: 48px; }
